@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoCroft - Internship Company</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to InfoCroft</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>InfoCroft is a modern internship platform offering hands-on experience with real-world projects. We empower students with practical skills in technology and business.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Internship Training in trending technologies</li>
+      <li>Live Projects with Mentorship</li>
+      <li>Certification & Placement Support</li>
+      <li>Flexible Online Learning Programs</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>What Our Interns Say</h2>
+    <div class="testimonial">
+      <p>"InfoCroft gave me real-world experience and confidence. Great mentors and engaging projects!"</p>
+      <cite>- Aishwarya, Data Science Intern</cite>
+    </div>
+    <div class="testimonial">
+      <p>"One of the best internship experiences I've had. Very student-friendly and effective."</p>
+      <cite>- Raj, Web Development Intern</cite>
+    </div>
+  </section>
+
+  <section id="register" class="section">
+    <h2>Register for Internship</h2>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="domain" placeholder="Preferred Domain" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="responseMsg"></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 InfoCroft. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
